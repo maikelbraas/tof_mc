@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Tower of Fantasy material calculators">
+	<meta name="author" content="Pojiy#5830">
+    <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>ToF Material Calculator</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header>
+        <div id="feedback-tab">
+            
+        </div>
+        <span id="ham-menu" style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776</span>
+        
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/" class="dash-button">
+                Calculate dimensional runs
+            </a>
+            <a href="change.html" class="dash-button">
+                Add materials
+            </a>
+            <a href="info.html" class="dash-button">
+                Info
+            </a>
+        </nav>
+    </header>
+    <main id="runs-main">
+        <section class="form-container" id="runs-forms">
+            <button class="mobile-form">Add simulacra with level to goal</button>
+            <article class="form-article">
+                <h2>Add simulacra with level</h2>
+                <form id="needed" class="simulacrum-calc form">
+                    <label for="name">Select simulacra</label>
+                    <select name="name" id="simulacrum-name">
+                    </select>
+                    <label for="level-start">Select simulacra current level</label>
+                    <select name="levelStart" class="simulacrum-level">
+                    </select>
+                    <label for="level-end">Select simulacra goal level</label>
+                    <select name="levelEnd" class="simulacrum-level">
+                    </select>
+                    <input type="submit" class="button" value="Submit">
+                </form>
+                <button id="clearGoal" class="button">Clear Goal</button>
+            </article>
+            <button class="mobile-form active">Calculate dimensional runs</button>
+            <article class="form-article dimen-form">
+                <h2>Calc runs</h2>
+                <form id="calc-amound-runs" class="runs-calc form">
+                    <label for="times">How many runs a day: </label>
+                    <input type="number" name="times" pattern="[0-9]*">
+                    <input type="submit" class="button" value="Submit">
+                    <label for="bounty">Calculate with daily bounties</label>
+                    <label class="switch">
+                      <input type="checkbox" name="bounty" id="bounty">
+                      <span class="slider"></span>
+                    </label>
+                    <label for="build">Calculate with weekly build rewards</label>
+                    <label class="switch">
+                      <input type="checkbox" name="build" id="build">
+                      <span class="slider"></span>
+                    </label>
+                    <label for="thisWeek">Only check if you didn't claim rewards this week</label>
+                    <label class="switch">
+                      <input type="checkbox" name="thisWeek" id="thisWeek">
+                      <span class="slider"></span>
+                    </label>
+                </form>
+                <div><h1 id="runs-needed" style="margin: 0;">Days runs needed: </h1></div>
+            </article>
+        </section>
+        <section id="simNeeded">
+            <button class="accordion">Materials Shortage</button>
+            <article id="shortage-content" class="lists">
+                <div id="shortage-list" class="lists-content-shortage">
+
+                </div>
+            </article>
+            <button class="accordion">Materials Have</button>
+            <article id="materials-content" class="lists">
+                <div id="materials-list" class="lists-content">
+
+                </div>
+            </article>
+            <button class="accordion">Materials Needed</button>
+            <article id="goalNeeded-content" class="lists">
+                <div id="goalNeeded-list" class="lists-content">
+
+                </div>
+            </article>
+            <button class="accordion">Boxes</button>
+            <article id="boxes-content" class="lists">
+                <div id="boxes-list" class="lists-content">
+                </div>
+            </article>
+        </section>
+
+        <button id="reset">Reset all storages</button>
+    </main>
+        
+
+    <footer>
+        <p>If you have any questions or found any mistakes, please contact me on discord!</p>
+        <p>Pojiy#5830</p>
+    </footer>
+    <script src="js/Calc.js"></script>
+    <script src="js/Simulacra.js"></script>
+    <script src="js/Storage.js"></script>
+    <script src="js/Material.js"></script>
+    <script src="js/loadStor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/runs.js"></script>
+    <script src="js/siteJs.js"></script>
+</body>
+</html>

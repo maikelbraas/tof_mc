@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Tower of Fantasy material calculators">
+	<meta name="author" content="Pojiy#5830">
+    <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>ToF Material Calculator</title>
+    <link rel="stylesheet" href="css/global.css">    
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div id="feedback-tab">
+            
+        </div>
+        <div id="warning-tab">
+            
+        </div>
+        <span id="ham-menu" style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776</span>
+        
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/" class="dash-button">
+                Calculate dimensional runs
+            </a>
+            <a href="change.html" class="dash-button">
+                Add materials
+            </a>
+            <a href="info.html" class="dash-button">
+                Info
+            </a>
+        </nav>
+    </header>
+    <main id="index-main">
+        <button class="accordion">Save / reload materials</button>
+        <section class="explain-section data-save">
+            <h2>Downloads</h2>
+            <article>
+                <button id="save">Save materials|boxes|batteries to file</button>
+            </article>
+            <article>
+                <label for="">Load Saved File</label><input type="file" id="backup">
+            </article>
+        </section>
+        <button class="accordion">Info Simulacra</button>
+        <section class="explain-section explain">
+            <h3>Dimentional runs</h3>
+            <p>On the dimentional runs page you can add the Simulacra you want to level. <br>
+                <img class="images-ss" src="images/ss-runs-full-add-sim.png">
+                <br>
+                The "Select simulacra" is a selection box. Choose a simulacra you want to level.
+                <br>
+                The "Select simulacra current level" is the level the select simulacra is currently on. <br>
+                It will take that level as its base and calculate the needed materials until the max level.
+                </p>
+                <ul>Info:
+                    <li>Current max level is: 150 </li>
+                    <li>Next max level is: 160</li>
+                    Material calculations will be done up until level 160 (Expect gold and EXP, these aren't know untill level increase)<br>
+                    If 0 is selected as current level all materials and gold will be calculated for level 0 > 160
+                </ul>
+            
+        </section>
+        
+        <button class="accordion">Info Runs</button>
+        <section class="explain-section explain">
+            <h3>Dimentional runs</h3>
+                <img src="images/ss-runs.png" alt="Calculate runs form" class="images-ss">
+            <p>
+                "How many runs a day" is an input box, put here the number of runs you want to do a day.
+            </p>
+            <p>
+                "Calculate with daily bounties" is a toggle, if selected it'll take the daily boxes of the current day and sequential days into the calculations.
+            </p>
+            <p>
+                "Calculate with weekly rewards" is a toggle for the island rewards. If selected it'll calculate the days 1 rewards cycle per 7 days run.
+            </p>
+            <p>
+                "Only check if you didn't claim rewards this week" is a toggle for the island rewards aswell. Only toggle it if you didn't claim this weeks rewards.
+            </p>
+            Info:<br>
+        Calculations are done on Dimentional Trails difficulty 6 (Updates to the next difficulty when added.)<br>
+                <ul>Without daily bounties:
+                        <li>1x Weapon Augmentation box IV</li>
+                        <li>1x Weapon Augmentation box III</li>
+                        <li>2x Weapon Augmentation box II</li>
+                        <li>2x Weapon Augmentation box I</li>
+                </ul>
+                <ul>
+                With daily bounties (Every day): Above +
+                        <li>3x Weapon Augmentation box I</li>
+                        <li>2x Weapon Augmentation box II</li>
+                </ul>
+                <ul>
+                    With weekly island rewards (Every 7 days): Above +
+                    <li>30x Weapon Augmentation box I</li>
+                    <li>15x Weapon Augmentation box II</li>
+                </ul>
+                
+        </section>
+        <button class="accordion">Updates</button>
+        <section class="explain-section explain">
+            <h2>Updates</h2>
+            <table id="updates">
+                <th>Number</th>
+                <th>Summary</th>
+                <th>Changes</th>
+                <th>Notes</th>
+                <tr>
+                    <td>1.0</td>
+                    <td>Changed website layout and style</td>
+                    <td>With the fully functional release, a new layout! <br>
+                    Split the calculator into multiple pages. <br>
+                    Info tab added aswell!</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>1.1</td>
+                    <td>Update simulacra</td>
+                    <td>Fenrir added to the pool.<br>
+                    Fixed the numbers for Lin, her materials where a guess and now that she's out the correct numbers are displayed.<br>
+                    There was a mistake on Crow material numbers, this has been fixed.</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>1.1</td>
+                    <td>Added images for the different items</td>
+                    <td>Added the images for the different materials, boxes and batteries for easier recognition.</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>1.2</td>
+                    <td>Backup and upload</td>
+                    <td>You can now backup your materials to a JSON file and reupload them. If you switch devices / browsers you can now take the materials with you.</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+        <button class="accordion">Future</button>
+        <section class="explain-section explain">
+            <h2>Features</h2>
+            <table id="future">
+                <th>Summary</th>
+                <th>Changes</th>
+                <th>Notes</th>
+                <tr>
+                    <td>Add matrice level calculation</td>
+                    <td>Add a calculator that looks at your materials to see if you have enough to level your matrice.</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>If you have any questions or found any mistakes, please contact me on discord!</p>
+        <p>Pojiy#5830</p>
+    </footer>
+    <script src="js/siteJs.js" defer></script>
+    <script src="js/info.js" defer></script>
+</body>
+</html>
