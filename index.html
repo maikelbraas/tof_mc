@@ -8,13 +8,13 @@
     <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Tower of Fantasy material calculators">
+    <meta name="description" content="Tower of Fantasy material calculator">
 	<meta name="author" content="Pojiy#5830">
-    <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king"> 
+    <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king, tower of fantasy material calculator, tof material calculator"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>ToF Material Calculator</title>
+    <title>Tower of Fantasy Material Calculator</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -79,7 +79,7 @@
                       <span class="slider"></span>
                     </label>
                 </form>
-                <div><h1 id="runs-needed" style="margin: 0;">Days runs needed: </h1></div>
+                <div><h1 id="runs-needed" style="margin: 0;">Number of runs a day needed: </h1></div>
             </article>
         </section>
         <section id="simNeeded">
@@ -107,16 +107,42 @@
                 </div>
             </article>
             <button class="accordion">Latest update</button>
-            <article id="" class="lists">
-                <div id="" class="lists-content">
-                    <p>
-                        Added a download option for all your materials, boxes and bateries. <br>
-                        Click <a href="info.html">here</a> to make a backup. <br>
-                        You can re-upload the file for when you switch browsers / devices.
-
-                    
-                    </p>
-                </div>
+            <article id="" class="lists explain">
+                <h2>Updates</h2>
+                <table id="updates">
+                    <th>Number</th>
+                    <th>Summary</th>
+                    <th>Changes</th>
+                    <th>Notes</th>
+                    <tr>
+                        <td>1.0</td>
+                        <td>Changed website layout and style</td>
+                        <td>With the fully functional release, a new layout! <br>
+                        Split the calculator into multiple pages. <br>
+                        Info tab added as well!</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>Update simulacra</td>
+                        <td>Fenrir added to the pool.<br>
+                        Fixed the numbers for Lin, her materials where a guess and now that she's out the correct numbers are displayed.<br>
+                        There was a mistake on Crow material numbers, this has been fixed.</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>Added images for the different items</td>
+                        <td>Added the images for the different materials, boxes and batteries for easier recognition.</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1.2</td>
+                        <td>Backup and upload</td>
+                        <td>You can now backup your materials to a JSON file and reupload them. If you switch devices / browsers you can now take the materials with you.</td>
+                        <td><a href="info.html">Go to this page to make the back-up</a></td>
+                    </tr>
+                </table>
             </article>
         </section>
 
@@ -128,13 +154,13 @@
         <p>If you have any questions or found any mistakes, please contact me on discord!</p>
         <p>Pojiy#5830</p>
     </footer>
-    <script src="js/Calc.js"></script>
-    <script src="js/Simulacra.js"></script>
+    <script src="js/compressed.min.js"></script>
+    <!-- <script src="js/Simulacra.js"></script>
     <script src="js/Storage.js"></script>
     <script src="js/Material.js"></script>
     <script src="js/loadStor.js"></script>
     <script src="js/main.js"></script>
     <script src="js/runs.js"></script>
-    <script src="js/siteJs.js"></script>
+    <script src="js/siteJs.js"></script> -->
 </body>
 </html>
