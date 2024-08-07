@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="canonical" href="https://tofmc.com/" />
     <meta name="description" content="Tower of Fantasy material calculator">
 	<meta name="author" content="Pojiy#5830">
     <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king, tower of fantasy material calculator, tof material calculator"> 
@@ -27,8 +28,9 @@
         </div>
         <span id="ham-menu" style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776</span>
         
-        <nav id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav id="mySidenav" class="sidenav nav">
+            <p class="closebtn" onclick="closeNav()">&times;</p>
+            <h3>Tower of Fantasy Material Calculator</h3>
             <a href="/" class="dash-button">
                 Calculate dimensional runs
             </a>
@@ -42,7 +44,7 @@
     </header>
     <main id="index-main">
         <button class="accordion">Save / reload materials</button>
-        <section class="explain-section data-save">
+        <section class="explain-section data-save" id="download">
             <h2>Download</h2>
             <article>
                 <p>Save materials, boxes, batteries to file</p>
@@ -53,10 +55,10 @@
             </article>
         </section>
         <button class="accordion">Info Simulacra</button>
-        <section class="explain-section explain">
-            <h3>Dimentional runs</h3>
-            <p>On the dimentional runs page you can add the Simulacra you want to level. <br>
-                <img class="images-ss" src="images/ss-runs-full-add-sim.png">
+        <section class="explain-section explain" id="simulacra">
+            <h3>Dimensional runs</h3>
+            <p>On the dimensional runs page you can add the Simulacra you want to level. <br>
+                <img class="images-ss" src="images/ss-runs-full-add-sim.png" alt="add simulacra">
                 <br>
                 The "Select simulacra" is a selection box. Choose a simulacra you want to level.
                 <br>
@@ -73,9 +75,9 @@
         </section>
         
         <button class="accordion">Info Runs</button>
-        <section class="explain-section explain">
-            <h3>Dimentional runs</h3>
-                <img src="images/ss-runs.png" alt="Calculate runs form" class="images-ss">
+        <section class="explain-section explain" id="dimensional">
+            <h3>Dimensional runs</h3>
+                <img src="images/ss-runs.png" alt="Calculate runs" class="images-ss">
             <p>
                 "How many runs a day" is an input box, put here the number of runs you want to do a day.
             </p>
@@ -89,7 +91,7 @@
                 "Only check if you didn't claim rewards this week" is a toggle for the island rewards aswell. Only toggle it if you didn't claim this weeks rewards.
             </p>
             Info:<br>
-        Calculations are done on Dimentional Trails difficulty 6 (Updates to the next difficulty when added.)<br>
+        Calculations are done on Dimensional Trails difficulty 6 (Updates to the next difficulty when added.)<br>
                 <ul>Without daily bounties:
                         <li>1x Weapon Augmentation box IV</li>
                         <li>1x Weapon Augmentation box III</li>
@@ -109,7 +111,7 @@
                 
         </section>
         <button class="accordion">Updates</button>
-        <section class="explain-section explain">
+        <section class="explain-section explain" id="update">
             <h2>Updates</h2>
             <table id="updates">
                 <th>Number</th>
@@ -147,7 +149,7 @@
             </table>
         </section>
         <button class="accordion">Future</button>
-        <section class="explain-section explain">
+        <section class="explain-section explain" id="future">
             <h2>Features</h2>
             <table id="future">
                 <th>Summary</th>
@@ -162,10 +164,22 @@
         </section>
     </main>
     <footer>
-        <p>If you have any questions or found any mistakes, please contact me on discord!</p>
-        <p>Pojiy#5830</p>
+        <article>
+            <p>If you have any questions or found any mistakes, please contact me on discord!</p>
+            <p>Pojiy#5830</p>
+        </article>
+        <article>
+            <h2>Site links</h2>
+            <nav>   
+                <a href="/">Home</a>
+                <a href="/info.html#download">Download / upload</a>
+                <a href="/info.html#simulacra">Info simulacra</a>
+                <a href="/info.html#dimensional">Info dimensional</a>
+                <a href="/info.html#update">Info update</a>
+                <a href="/info.html#future">Info future</a>
+            </nav>
+        </article>
     </footer>
-    <script src="js/siteJs.js" defer></script>
-    <script src="js/info.js" defer></script>
+    <script src="js/compressed.min.js" defer></script>
 </body>
 </html>

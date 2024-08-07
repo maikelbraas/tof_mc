@@ -1,0 +1,23 @@
+
+    <script src="js/Calc.js"></script>
+    <!-- <script src="js/Simulacra.js"></script>
+    <script src="js/Storage.js"></script>
+    <script src="js/Material.js"></script>
+    <script src="js/loadStor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/change.js"></script>
+    <script src="js/siteJs.js"></script> -->
+
+
+    <script src="js/Calc.js"></script>
+    <!-- <script src="js/Simulacra.js"></script>
+    <script src="js/Storage.js"></script>
+    <script src="js/Material.js"></script>
+    <script src="js/loadStor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/runs.js"></script>
+    <script src="js/siteJs.js"></script> -->
+
+
+    <script src="js/siteJs.js" defer></script>
+    <!-- <script src="js/info.js" defer></script> -->

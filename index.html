@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="canonical" href="https://tofmc.com/" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
@@ -14,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Tower of Fantasy Material Calculator</title>
+    <title>Calc</title> <!-- Tower of Fantasy Material Calculator -->
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -24,8 +25,9 @@
         </div>
         <span id="ham-menu" style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776</span>
         
-        <nav id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav id="mySidenav" class="sidenav nav">
+            <p class="closebtn" onclick="closeNav()">&times;</p>
+            <h2>Calc</h2>
             <a href="/" class="dash-button">
                 Calculate dimensional runs
             </a>
@@ -140,7 +142,7 @@
                         <td>1.2</td>
                         <td>Backup and upload</td>
                         <td>You can now backup your materials to a JSON file and reupload them. If you switch devices / browsers you can now take the materials with you.</td>
-                        <td><a href="info.html">Go to this page to make the back-up</a></td>
+                        <td><a href="info.html#download">Go to this page to make the back-up</a></td>
                     </tr>
                 </table>
             </article>
@@ -151,16 +153,23 @@
         
 
     <footer>
-        <p>If you have any questions or found any mistakes, please contact me on discord!</p>
-        <p>Pojiy#5830</p>
+        <article>
+            <!-- <p>If you have any questions or found any mistakes, please contact me on discord!</p>
+            <p>Pojiy#5830</p> -->
+        </article>
+        <article>
+            <h2>Site links</h2>
+            <nav>   
+                <a href="/">Home</a>
+                <a href="/info.html#download">Download / upload</a>
+                <a href="/info.html#simulacra">Info simulacra</a>
+                <a href="/info.html#dimensional">Info dimensional</a>
+                <a href="/info.html#update">Info update</a>
+                <a href="/info.html#future">Info future</a>
+            </nav>
+            </nav>
+        </article>
     </footer>
-    <script src="js/compressed.min.js"></script>
-    <!-- <script src="js/Simulacra.js"></script>
-    <script src="js/Storage.js"></script>
-    <script src="js/Material.js"></script>
-    <script src="js/loadStor.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/runs.js"></script>
-    <script src="js/siteJs.js"></script> -->
+    <script src="js/compressed-index.js"></script>
 </body>
 </html>
