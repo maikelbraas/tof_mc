@@ -9,17 +9,24 @@
     <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Tower of Fantasy material calculator">
+    <meta name="description" content="Tower of Fantasy material calculator, calculate how many materials you need to upgrade your simulacra and how many dimensional runs you need to do.">
 	<meta name="author" content="Pojiy#5830">
     <meta name="keywords" content="tower of fantasy, calculator, materials, Tower of Fantasy global, tofmc, Nanofiber frame I, Nanofiber frame II, Nanofiber Frame II, Nanofiber Frame III, Booster Frame I, Booster Frame II, Booster Frame III, Nano coating I, Nano coating II, Nano coating III, Acidproof glaze I, Acidproof glaze II, acidproof glaze III, gold, exp, weapon augmentation box I, weapon augmentation box II, weapon augmentation box III, weapon augmentation box IV, weapon augmentation kit box I, Heart of lava, Heart of lightning, Heart of winter, Heart of summit, firecore, icecore, rockcore, magcore, lightningsource, landsource, snowsource, sunsource, MMO, Gacha, dimensional runs, runs, daily, weekly, boxes, simulacrum, simulacra, alyss, umi, crow, shiro, lin, tian lin, tsubasa, meryl, ruby, cobalt-b, lyra, fenrir, annabella, zero, cocorite, samir, fuwasaki, nemesis, frigg, claudia, huma, king, tower of fantasy material calculator, tof material calculator"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Calc</title> <!-- Tower of Fantasy Material Calculator -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <title>Tower of Fantasy Material Calculator</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
     <header>
+        <div style="visibility: hidden;position: absolute;">
+            <p>Calculate the amount of materials you need to get your old team or new simulacra to the next level(s)!</p>
+            <p>Check the amount of materials and boxes you have and the amount you need.</p>
+            <p>Ones you've enter'd your desired simulacra and added your materials / boxes. Input the amount of runs you want to do a day and press submit button.</p>
+            <p>Ones done it'll show you the matterials you're missing and how many days you need to do the dimensional runs to get the required materials!</p>
+            <p>This can been seen on Total days needed: </p>
+        </div>
         <div id="feedback-tab">
             
         </div>
@@ -27,8 +34,8 @@
         
         <nav id="mySidenav" class="sidenav nav">
             <p class="closebtn" onclick="closeNav()">&times;</p>
-            <h2>Calc</h2>
-            <a href="/" class="dash-button">
+            <h3>Tower of Fantasy Material Calculator</h3>
+            <a href="index.html" class="dash-button">
                 Calculate dimensional runs
             </a>
             <a href="change.html" class="dash-button">
@@ -45,15 +52,15 @@
             <article class="form-article">
                 <h2>Add simulacra with level</h2>
                 <form id="needed" class="simulacrum-calc form">
-                    <label for="name">Select simulacra</label>
+                    <label for="name">Select simulacra
                     <select name="name" id="simulacrum-name">
-                    </select>
-                    <label for="level-start">Select simulacra current level</label>
+                    </select></label>
+                    <label for="levelStart">Select simulacra current level
                     <select name="levelStart" class="simulacrum-level">
-                    </select>
-                    <label for="level-end">Select simulacra goal level</label>
+                    </select></label>
+                    <label for="levelEnd">Select simulacra goal level
                     <select name="levelEnd" class="simulacrum-level">
-                    </select>
+                    </select></label>
                     <input type="submit" class="button" value="Submit">
                 </form>
                 <button id="clearGoal" class="button">Clear Goal</button>
@@ -62,8 +69,8 @@
             <article class="form-article dimen-form">
                 <h2>Calc runs</h2>
                 <form id="calc-amound-runs" class="runs-calc form">
-                    <label for="times">How many runs a day: </label>
-                    <input type="number" name="times" pattern="[0-9]*">
+                    <label for="times">How many runs a day: 
+                    <input type="number" name="times" pattern="[0-9]*"></label>
                     <input type="submit" class="button" value="Submit">
                     <label for="bounty">Calculate with daily bounties</label>
                     <label class="switch">
@@ -75,13 +82,13 @@
                       <input type="checkbox" name="build" id="build">
                       <span class="slider"></span>
                     </label>
-                    <label for="thisWeek">Only check if you didn't claim rewards this week</label>
+                    <label for="thisWeek">Only check if you didn't claim the rewards this week</label>
                     <label class="switch">
                       <input type="checkbox" name="thisWeek" id="thisWeek">
                       <span class="slider"></span>
                     </label>
                 </form>
-                <div><h1 id="runs-needed" style="margin: 0;">Number of runs a day needed: </h1></div>
+                <div><h1 id="runs-needed" style="margin: 0;">Total days needed: </h1></div>
             </article>
         </section>
         <section id="simNeeded">
@@ -117,47 +124,56 @@
                     <th>Changes</th>
                     <th>Notes</th>
                     <tr>
-                        <td>1.0</td>
-                        <td>Changed website layout and style</td>
-                        <td>With the fully functional release, a new layout! <br>
-                        Split the calculator into multiple pages. <br>
-                        Info tab added as well!</td>
+                        <td>1.2.5</td>
+                        <td>Added Yulan, Garnett and Rubilia</td>
+                        <td>Added Yulan, Garnett and Rubilia to the calculator for preperations for the future.</td>
+                        <td>25-5-2023</td>
+                    </tr>
+                    <tr>
+                        <td>1.2.4</td>
+                        <td>Added Gnonno and level 200</td>
+                        <td>Added Gnonno to the calculator. Added the materials for level 200 simulacra.</td>
+                        <td>23-5-2023</td>
+                    </tr>
+                    <tr>
+                        <td>1.2.3</td>
+                        <td>Added Fiona, level 180</td>
+                        <td>Added Fiona to the calculator. Added the materials for level 180 simulacra.</td>
                         <td>-</td>
                     </tr>
                     <tr>
-                        <td>1.1</td>
-                        <td>Update simulacra</td>
-                        <td>Fenrir added to the pool.<br>
-                        Fixed the numbers for Lin, her materials where a guess and now that she's out the correct numbers are displayed.<br>
-                        There was a mistake on Crow material numbers, this has been fixed.</td>
+                        <td>1.2.2</td>
+                        <td>Added Lan and Icarus</td>
+                        <td>Added Lan and Icarus to the calculator. The other simulacra will be added when their materials are revealed.</td>
                         <td>-</td>
                     </tr>
                     <tr>
-                        <td>1.1</td>
-                        <td>Added images for the different items</td>
-                        <td>Added the images for the different materials, boxes and batteries for easier recognition.</td>
-                        <td>-</td>
+                        <td>1.2.1</td>
+                        <td>Fixed Alyss</td>
+                        <td>For Alyss material needed said: Booster Frame, changed it to the correct material of Nanofiber.</td>
+                        <td>Thanks to the user for reporting this!</td>
                     </tr>
                     <tr>
                         <td>1.2</td>
                         <td>Backup and upload</td>
                         <td>You can now backup your materials to a JSON file and reupload them. If you switch devices / browsers you can now take the materials with you.</td>
-                        <td><a href="info.html#download">Go to this page to make the back-up</a></td>
+                        <td><a style="color: #ededed" href="info.html#download">Go to this page to make the back-up</a></td>
                     </tr>
                 </table>
             </article>
         </section>
 
-        <button id="reset">Reset all storages</button>
     </main>
         
 
     <footer>
-        <article>
-            <!-- <p>If you have any questions or found any mistakes, please contact me on discord!</p>
-            <p>Pojiy#5830</p> -->
+        <article id="note-text">
+            <p>This is a hobby project, so if I'm slow to make the changes that are requested its because I'm busy with work.
+            </p>
+
+        <button id="reset">Reset all storages</button>
         </article>
-        <article>
+        <article id="links-site">
             <h2>Site links</h2>
             <nav>   
                 <a href="/">Home</a>
@@ -167,9 +183,16 @@
                 <a href="/info.html#update">Info update</a>
                 <a href="/info.html#future">Info future</a>
             </nav>
+        </article>
+        <article id="links-helpful">
+            <h2>ToF helpful sites</h2>
+            <nav>   
+                <a href="https://toweroffantasy.info/">Simulacra info</a>
+                <a href="https://www.ghzs666.com/tower-of-fantasy-map#/">Interactive map</a>
+                <a href="https://docs.google.com/spreadsheets/d/1ZrJokNh_0AF_9welc7Etz6K8jlpzi5bXpiWz-mQZa78/edit#gid=1860784314">DPS calculator</a>
             </nav>
         </article>
     </footer>
-    <script src="js/compressed-index.js"></script>
+    <script src="js/compressed-index.min.js"></script>
 </body>
 </html>
